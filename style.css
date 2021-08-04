@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    overflow: hidden;
+    animation: Shake 2s linear infinite;
+}
+button{
+    width: 200px;
+    height: 80px;
+}
+.sky{
+    width: 100vw;
+    height: 100vh;
+    background: url(sky.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#grass{
+    position: absolute;
+    height: 40vh ;
+    width: 800vw;
+    top: 28%;
+    background: url(grass.png) ;
+    animation: carMove 10s linear infinite;
+}
+#track{
+    position: absolute;
+    height: 50vh;
+    width: 600vw;
+    top: 50%;
+    background: url(track.png);
+    /* background-repeat: repeat-x; */
+    animation: carMove 5s linear infinite;
+}
+#car{
+    /* lane1 
+    top: 34%;
+    left: 30%;
+    width: 320px;
+    height: 160px;
+     */
+
+    /* lane2
+    top: 1%;
+    left: 30%;
+    width: 282px;
+    height: 130px; */
+
+    /* lane3
+    top: 29%;
+    left: 30%;
+    width: 337px;
+    height: 155px; */
+    position: absolute;
+    top: 64vh;
+    bottom: 30vh;
+    left: 1vw;
+    width: 320px;
+    height: 160px;
+    background: url(car.png) no-repeat;
+    background-size: cover;
+    animation: Shake .6s linear infinite;
+}
+.wheel1 img{
+    position: absolute;
+    /* lane1
+     top: 47%;
+    left: 6.8%;
+    width: 56px;
+    height: 56px; */
+    top: 47%;
+    left: 6.8%;
+    width: 56px;
+    height: 56px;
+    animation: wheelRotation .6s linear infinite;
+}
+.wheel2 img{
+    position: absolute;
+    /* lane1
+    top: 46%;
+    left: 71.8%;
+    width: 56px;
+    height: 56px;
+     */
+    top: 46%;
+    left: 71.8%;
+    width: 56px;
+    height: 56px;
+    animation: wheelRotation .6s linear infinite;
+}
+#cone{
+    position: absolute;
+    height: 117px;
+    width: 112px;
+    top: 19vh;
+    left: 100vw;
+}
+#rock{
+    position: absolute;
+    height: 117px;
+    width: 112px;
+    top: 19vh;
+    left: 185vw;
+}
+#rock1{
+    position: absolute;
+    height: 117px;
+    width: 112px;
+    top: 19vh;
+    left: 270vw;
+}
+#rock2{
+    position: absolute;
+    height: 117px;
+    width: 112px;
+    top: 19vh;
+    left: 300vw;
+}
+@keyframes wheelRotation {
+    100%{
+        transform: rotate(360deg);
+    }
+}
+@keyframes carMove{
+    100%{
+        transform: translateX(-500vw);
+    }
+}
+@keyframes Shake{
+    0%{
+        transform: translateY(-5px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-5px);
+    }
+}

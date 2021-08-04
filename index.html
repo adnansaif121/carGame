@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Moving Car</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+</head>
+<body>
+    <div class="sky">
+        <button onclick="moveUp()" style="position: absolute; top: 9vh; left: 12vw;opacity: 0.4;"><i class="fas fa-angle-up fa-5x"></i></button>
+        <button onclick="moveDown()" style="position: absolute; top: 22vh; left: 12vw;opacity: 0.4;z-index:2;" ><i class="fas fa-angle-down fa-5x"></i></button>
+        <button onclick="location.reload()" style="position: absolute; top: 17vh; left: 74vw;opacity: 0.4;z-index:2;" ><i class="fas fa-redo-alt fa-5x"></i></button>
+        <h1 id="h1" style="top: 14vh;left: 31vw;position: absolute;font-size: 5em;color: rgb(238, 255, 0);">Have fun</h1>
+        <h2 style="top: 11vh;left: 76vw;position: absolute;">Score: </h2>
+        <h2 id="score" style="top: 11vh;left: 82vw;position: absolute;">0</h2>
+        <div id="grass"></div>
+        <div id="track">
+            <img id="cone" src="cone.png" alt="">
+            <img id="rock" src="rock.png" alt="">
+            <img id="rock1" src="rock1.png" alt="">
+            <img id="rock2" src="rock2.png" alt="">
+        </div>
+        <div id="car">
+            <div class="wheel1">
+                <img src="wheel.png" alt="">
+            </div>
+            <div class="wheel2">
+                <img src="wheel.png" alt="">
+        </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
